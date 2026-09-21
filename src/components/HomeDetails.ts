@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const HomeDetails = styled.div`
-
     .navigation, .container {
         padding: 1.5rem 18rem;
     }
@@ -252,6 +251,333 @@ const HomeDetails = styled.div`
                     &:hover {
                         color: var(--blue-hover);
                     }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1440px) {
+        .navigation, .container {
+            padding-left: 8rem;
+            padding-right: 8rem;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .navigation, .container {
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+
+        .container {
+            .leftContent {
+                flex: 1;
+                min-width: 0;
+
+                .center {
+                    .first-image {
+                        width: 100%;
+                        max-width: 550px;
+                    }
+                }
+            }
+
+            .rightContent {
+                width: 30rem;
+                flex-shrink: 1;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .navigation, .container {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .navigation {
+            .leftMenu {
+                h1 {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .rightMenu {
+                gap: 0.25rem;
+
+                button {
+                    padding: 0.5rem 0.75rem;
+                }
+            }
+        }
+
+        .container {
+            gap: 2rem;
+
+            .leftContent {
+                padding: 2rem 0;
+
+                .center {
+                    .first-image {
+                        width: 100%;
+                        max-width: 500px;
+                    }
+                }
+
+                .short, .full {
+                    .images {
+                        flex-wrap: wrap;
+                    }
+                }
+            }
+
+            .rightContent {
+                width: 28rem;
+                padding: 3rem 0;
+
+                h1 {
+                    font-size: 2.5rem;
+                }
+
+                .description {
+                    width: 100%;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        .navigation, .container {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
+        .navigation {
+            align-items: flex-start;
+            gap: 1rem;
+
+            .leftMenu {
+                h1 {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .rightMenu {
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                gap: 0.25rem;
+
+                button {
+                    padding: 0.4rem 0.6rem;
+                    font-size: 0.75rem;
+                }
+            }
+        }
+
+        .container {
+            flex-direction: column;
+            gap: 1rem;
+
+            .leftContent {
+                width: 100%;
+                box-sizing: border-box;
+                padding: 1.5rem 0;
+
+                .center {
+                    width: 100%;
+
+                    .first-image {
+                        width: 100%;
+                        max-width: 550px;
+                    }
+                }
+
+                .short, .full {
+
+                    .images {
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        gap: 0.75rem;
+
+                        img {
+                            width: 100%;
+                            box-sizing: border-box;
+                        }
+                    }
+                }
+            }
+
+            .rightContent {
+                width: 100%;
+                box-sizing: border-box;
+                padding: 1.5rem 0;
+
+                h1 {
+                    font-size: 2.3rem;
+                }
+
+                .description {
+                    width: 100%;
+                    max-width: 30rem;
+                    font-size: 1rem;
+                }
+
+                .shortPromptButton, .fullPromptButton {
+                    padding: 1.25rem 0;
+                    font-size: 1rem;
+                }
+
+                .steps {
+                    flex-wrap: wrap;
+                }
+
+                .slideContainer {
+
+                    .slide {
+                        img {
+                            width: 110px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+
+        .navigation, .container {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .navigation {
+            flex-direction: column;
+            align-items: stretch;
+
+            .leftMenu {
+                h1 {
+                    font-size: 1.3rem;
+                }
+
+            }
+
+            .rightMenu {
+                justify-content: flex-start;
+
+                button {
+                    padding: 0.4rem 0.55rem;
+                    font-size: 0.7rem;
+                }
+            }
+        }
+
+        .container {
+            .leftContent {
+                padding: 1rem 0;
+
+                .center {
+                    .first-image {
+                        border-radius: 12px;
+                    }
+
+                    p {
+                        font-size: 0.8rem;
+                    }
+                }
+
+                .short, .full {
+                    .images {
+                        grid-template-columns: repeat(3, 1fr);
+                        gap: 0.5rem;
+
+                        img {
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+
+            .rightContent {
+                padding: 1rem 0;
+
+                h1 {
+                    font-size: 2rem;
+                }
+
+                .description {
+                    font-size: 0.9rem;
+                }
+
+                .shortPromptButton, .fullPromptButton {
+                    padding: 1rem 0;
+                    font-size: 0.9rem;
+                    border-radius: 12px;
+                }
+
+                .text {
+                    font-size: 0.8rem;
+                }
+
+                .quote {
+                    font-size: 0.8rem;
+                }
+
+                .steps {
+                    font-size: 0.8rem;
+                    gap: 0.75rem;
+                }
+
+                .slideContainer {
+                    .slide {
+                        gap: 0.75rem;
+
+                        img {
+                            width: 95px;
+                            border-radius: 12px;
+                        }
+                    }
+                }
+
+                .seeMore {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 380px) {
+        .navigation, .container {
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+        }
+
+        .navigation {
+            .rightMenu {
+                button {
+                    padding: 0.35rem 0.45rem;
+                    font-size: 0.65rem;
+                }
+            }
+        }
+
+        .container {
+            .leftContent {
+                .short, .full {
+                    .images {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                }
+            }
+
+            .rightContent {
+                h1 {
+                    font-size: 1.8rem;
+                }
+
+                .shortPromptButton, .fullPromptButton {
+                    font-size: 0.85rem;
                 }
             }
         }
