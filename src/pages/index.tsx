@@ -139,7 +139,7 @@ export default function Home() {
                     <hr />
 
                     <h4>{language[i18n].lastUpdates}</h4>
-                    <p className="seeMore">{language[i18n].seeMore} <a href="#">{language[i18n].clickHere}.</a></p>
+                    <p className="seeMore">{language[i18n].seeMore} <a href="https://github.com/Yagasaki7K/website-chibot/tree/main/public" target="_blank">{language[i18n].clickHere}.</a></p>
 
                     <div className="slideContainer">
                         <div className="slide">
