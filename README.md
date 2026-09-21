@@ -1,6 +1,8 @@
-# Chibot Studio
+<div align="center">
+  <img src="public/blonde-2.png" width="400"/>
 
-> Your character, as a little bot.
+  <h1>Chibot Studio - Your character, as a little bot.</h1>
+</div>
 
 Chibot Studio is a small creative web project focused on transforming characters and people from reference images into minimalist 2D bot-style icons.
 
@@ -251,9 +253,3 @@ Built by **Anderson "Yagasaki" Marlon**.
 GitHub:
 
 [Yagasaki7K](https://github.com/Yagasaki7K?utm_source=chatgpt.com)
-
-## Chibot Studio
-
-**Your character, as a little bot.**
-
-[Visit Chibot Studio](https://chibotstudio.vercel.app/?utm_source=chatgpt.com)
